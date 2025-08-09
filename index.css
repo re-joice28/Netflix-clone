@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+header img{
+    width: 120px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;    
+    padding: 0px 200px;
+}
+#select-box{
+    padding-top:50px;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+    margin: 0px;
+    color: whitesmoke;
+}
+main{
+    padding: 0px 200px;
+}
+#image-box{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    perspective: 10000px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: pointer;
+}
+#image-box ::-webkit-scrollbar{
+    display: none;
+    padding: 20px;
+}
+div img{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+div img:hover{
+    box-shadow: 0px 8px 16px black;
+    transform: translateZ(100px);
+    transition: 0.2s ease ,box-shadow 0.2s;
+}
+#idx{
+    background-image: url(back2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    padding: 150px;
+    text-align: center;
+    border-radius: 5px; 
+    box-shadow: 0px 50px 100px black inset;
+}
+#but{
+    padding: 5px 120px;    
+    cursor: pointer;
+}
+a,select{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(228, 38, 38);
+    border-radius: 3px;
+    border: 1px solid  rgb(228, 38, 38);
+    padding: 5px;    
+    cursor: pointer;
+}
+#input-box{
+    position: relative;
+    margin: 15px 0px;
+    display: grid;
+    place-items: center;
+    margin:20px 0px;    
+}
+#input-box input{
+    height: 25px;
+    width: 50%;
+    background-color: rgba(128, 128, 128, 0.562);
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 3px;    
+    cursor: pointer;
+}
+#input-box label{
+    width: 65%;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    transition: 0.3s ease;    
+    cursor: pointer;
+}
+#input-box input:focus + label,
+#input-box input:valid+ label{
+  top: -8px;
+  left: 8px;
+  font-size: 12px;
+  color: white;    
+  cursor: pointer;
+}
+button:hover{
+    box-shadow: 0px  8px 16px rgba(0, 0, 0, 0.2) inset;
+}
+footer{
+    padding: 0px 200px;
+    text-align: center;
+}

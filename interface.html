@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+    <header>
+        <p><img src="logo.png" alt=""></p>
+        <div id="select-box">
+            <select name="" id="">
+                <option value="">Français</option>
+                <option value="">English</option>
+            </select>
+            <button onclick="verification()" type="button" id="ab">M'identifier</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="xyz">
+            <div id="identification-box">
+                <h1>Identifiez-vous</h1>
+                <div class="input-box">
+                    <input type="text" required id="mail">
+                    <label for="mail"> E-mail ou numero de mobile</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required id="pass">
+                    <label for="pass"> Mot de passe</label>
+                </div>
+                <div id="help-box">
+                    <button onclick="verification()" id="bc" type="button">M'identifier</button>
+                    <p>OU</p>
+                    <a href="#" id="code-box" class="lien">Utiliser un code d'identification</a>
+                    <a href="#" class="lien">Mot de passe oublié ?</a>
+                </div>
+                <div id="Abonnement-box">
+                    <input type="checkbox" id="souvenir">
+                    <label for="souvenir"> Se souvenir de moi</label>
+                    <p>Premiere visite sur Netflix ?<span><a href="#" style="text-decoration: none;" class="lien">Abonnez-vous maintenant.</a></span></p>
+                    <p>Cette page est protégée par Google reCAPTCHA pour nous assurer que vous n'etes pas un robot.</p>
+                    <a href="#">En savoir plus.</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Netflix clone.</p>
+    </footer>
+
+    <script src="interface.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="">
+        <div id="select-box">
+            <select name="" id="">
+                <option value="">Français</option>
+                <option value="">English</option>
+            </select>
+            <a onclick="adresse()">S'identifier</a>
+        </div>
+    </header>
+    <main>
+        <div id="idx">
+                <h1>Films et séries en illimité,<br>et bien plus</h1>
+                <p>À partir de 2,99 $US. Annulable à tout moment.</p>
+                <p>Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</p>
+                <div id="input-box">
+                    <input type="text" id="mail" required>
+                    <label for="mail">adresse e-mail</label>
+                </div>
+                <a id="but" onclick="adresse()">Commencer </a>
+        </div>
+        <div id="images">
+            <h2>Tendances actuelles</h1>
+            <div id="image-box">
+                <img src="19.jpg" alt="film" title="the other zoey">
+                <img src="3.jpg" alt="film" title="les chroniques des brigertoon">
+                <img src="4.jpg" alt="film" title="Queen charlotte">
+                <img src="5.jpg" alt="film" title="prison break">
+                <img src="6.jpg" alt="film" title="vampires diaries">
+                <img src="7.jpg" alt="film" title="Orginalis">
+                <img src="8.jpg" alt="film" title="Get even">
+                <img src="9.jpg" alt="film" title="forever">
+                <img src="10.jpg" alt="film" title="legacies">
+                <img src="12.jpg" alt="film" title="little big mouth">
+                <img src="13.jpg" alt="film" title="malefice">
+                <img src="14.jpg" alt="film" title="outer banks">
+                <img src="15.jpg" alt="film" title="you">
+                <img src="16.jpg" alt="film" title="sisterhood">
+                <img src="2.jpg" alt="film" title="the summer i turned pretty">
+                <img src="22.jpg" alt="film" title="one of them days">
+                <img src="21.jpg" alt="film" title="carnaval">
+                <img src="18.jpg" alt="film" title="summer time">
+                <img src="11.jpg" alt="film" title="the bad boy and me">
+                <img src="20.jpg" alt="film" title="my life with the walter boys">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Netflix clone.</p>
+    </footer>
+
+    <script>
+        function adresse(){
+            const b = document.getElementById("mail").value.trim();
+    if(b===""){
+        alert("veuillez entrer votre adresse emeil ou numero");
+        return;
+    }else{
+
+            window.location.href = "interface.html";
+
+    }
+        }
+    </script>
+</body>
+</html>
